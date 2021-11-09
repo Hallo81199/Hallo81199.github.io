@@ -57,20 +57,7 @@ const animationTimeline = () => {
       },
       "-=1"
     )
-    .from(".three", 0.7, {
-      opacity: 0,
-      y: 10,
-      // scale: 0.7
-    })
-    .to(
-      ".three",
-      1.0,
-      {
-        opacity: 0,
-        y: 10,
-      },
-      "+=2"
-    )
+    
     .from(".four", 0.7, {
       scale: 0.2,
       opacity: 0,
@@ -92,7 +79,7 @@ const animationTimeline = () => {
     })
     .to(
       ".four",
-      0.5,
+      3.5,
       {
         scale: 0.2,
         opacity: 0,
@@ -100,56 +87,8 @@ const animationTimeline = () => {
       },
       "+=0.7"
     )
-    .from(".idea-1", 1.5, ideaTextTrans)
-    .to(".idea-1", 1.5, ideaTextTransLeave, "+=.5")
-    .from(".idea-2", 1.5, ideaTextTrans)
-    .to(".idea-2", 1.5, ideaTextTransLeave, "+=3.5")
-    .from(".idea-3", 1.5, ideaTextTrans)
-    .to(".idea-3 strong", 1.5, {
-      scale: 1.2,
-      x: 10,
-      backgroundColor: "rgb(21, 161, 237)",
-      color: "#fff",
-    })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
    
    
-    .staggerFrom(
-      ".idea-6 span",
-      0.8,
-      {
-        scale: 3,
-        opacity: 0,
-        rotation: 15,
-        ease: Expo.easeOut,
-      },
-      0.2
-    )
-    .staggerTo(
-      ".idea-6 span",
-      0.8,
-      {
-        scale: 3,
-        opacity: 0,
-        rotation: -15,
-        ease: Expo.easeOut,
-      },
-      0.2,
-      "+=1"
-    )
-    .staggerFromTo(
-      ".baloons img",
-      2.5,
-      {
-        opacity: 0.9,
-        y: 1400,
-      },
-      {
-        opacity: 1,
-        y: -1000,
-      },
-      0.2
-    )
     .from(
       ".lydia-dp",
       0.5,
